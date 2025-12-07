@@ -20,7 +20,6 @@ This proposal outlines a robust, enterprise-grade MLOps solution for deploying a
 The solution prioritizes **safety, auditability, and business impact** while maintaining flexibility for rapid iteration.
 
 ---
-
 ## 1. DEPLOYMENT STRATEGY
 
 ### 1.1 Architecture Overview
@@ -41,6 +40,9 @@ The solution prioritizes **safety, auditability, and business impact** while mai
     Data Ops          MLOps (Monitoring)    API Gateway
     (DLT)             (Drift, Performance)    (CRM/Dashboard)
 ```
+#### Architecture - HLD
+
+![Architecture](https://github.com/shreyaschim/ML-Deployment-Plan/blob/main/mlops_architecture.png?raw=true)
 
 ### 1.2 Deployment Framework
 
@@ -195,6 +197,10 @@ mlflow.sklearn.log_model(
 | **Sales Cycle** | No increase in days to close | Sales/Operations |
 | **Lead Quality Score** | Subjective: sales team satisfaction ≥ 8/10 | Sales/Product |
 | **Time to Decision** | Sales team spends ≤ same time prioritizing | Sales/Operations |
+
+#### Dashboard Design
+
+![Dashboard Design](https://github.com/shreyaschim/ML-Deployment-Plan/blob/main/dashboard.png?raw=true)
 
 ### 2.3 Implementation: Shadow Deployment Example
 
@@ -1053,6 +1059,11 @@ def sync_scores_to_salesforce():
 - ✓ Full rollout to 100% of leads
 - ✓ Automated retraining operational
 - ✓ Model ROI: > $500K in incremental revenue
+
+### Timeline 
+
+![Timeline](https://github.com/shreyaschim/ML-Deployment-Plan/blob/main/deployment_timeline.png?raw=true)
+
 
 ---
 
